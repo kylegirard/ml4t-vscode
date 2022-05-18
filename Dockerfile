@@ -16,7 +16,7 @@ RUN if [ -f "/tmp/conda-tmp/environment.yml" ]; then umask 0002 && /opt/conda/bi
     && rm -rf /tmp/conda-tmp \
     && echo "conda activate ml4t" >> ~/.bashrc
 
-RUN echo "conda activate ml4t" >> /home/vscode/.bashrc
+RUN  echo ". /opt/conda/etc/profile.d/conda.sh" >> /home/vscode/.bashrc && echo "conda activate ml4t" >> /home/vscode/.bashrc
 
 # [Optional] Uncomment this section to install additional OS packages.
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
