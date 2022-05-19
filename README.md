@@ -1,8 +1,8 @@
-# About
-This project was created as a development environment for ML4T.
+# Overview
+This project was created to setup a development environment for ML4T.
 
 Notes: 
-- This project will not build on Apple Silicon--many of the package versions referenced in the environment.yml do not support Apple Silicon. 
+- This project will not build on Apple Silicon as is. Many of the *package versions* referenced in the environment.yml do not support Apple Silicon. If you are not using this project for ML4T feel free to try updating the package versions in environment.yml—you should get a successful build on Apple Silicon. 
 
 # Creating a new build
 Docker command:
