@@ -29,6 +29,14 @@ docker run -e DISPLAY=192.168.1.101:0 --mount type=bind,source="$(pwd)",target=/
 
 
 # Reference links
-- https://code.visualstudio.com/docs/remote/devcontainerjson-reference#_variables-in-devcontainerjson
+General
 - https://docs.docker.com/storage/bind-mounts/
 
+X11 
+- http://wiki.ros.org/docker/Tutorials/GUI
+- https://www.youtube.com/watch?v=cNDR6Z24KLM (Note: running the command `xhost +` is unsafe. See first X11 link.)
+  
+Docker image inheritance  
+- https://github.com/microsoft/vscode-dev-containers/blob/v0.234.0/containers/python-3-anaconda/.devcontainer/base.Dockerfile
+- https://github.com/microsoft/vscode-dev-containers/tree/v0.234.0/containers/python-3-anaconda
+- https://github.com/ContinuumIO/docker-images/blob/master/anaconda3/debian/Dockerfile
