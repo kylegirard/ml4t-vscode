@@ -24,8 +24,23 @@ The following command will run a container with two key features enabled:
 - Directory binding—-this will allow you to open your current directory as a directory from within the docker container; you can change files locally and run them in Docker instantly. 
 
 ```
-docker run -e DISPLAY=192.168.1.101:0 --mount type=bind,source="$(pwd)",target=/workspace/code_root -it girardkyle/ml4t-vscode:latest
+docker run -e DISPLAY=192.168.1.101:0 --mount type=bind,source="$(pwd)",target=/workspace/code_root -it --port 8888:8888 girardkyle/ml4t-vscode:latest
 ```
+
+# Jupyter
+## Start juypter manually from within container
+```
+jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser > /dev/null 2>&1 &
+```
+
+## Killing juypter
+```
+ps aux | grep jupyter
+kill -9 pid
+```
+
+
+
 
 <!-- TODO add notes about setting up X11 on MAC  -->
 

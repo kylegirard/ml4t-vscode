@@ -1,7 +1,7 @@
-rm -rf ./working
+rm -rf ./workingg
 rm -rf ./.devcontainer
 
-git clone git@github.com:microsoft/vscode-dev-containers.git ./working
+git clone ssh://git@github.com:22/microsoft/vscode-dev-containers.git ./working
 
 # copy fresh instance from vscode-dev-containers repo
 cp -r ./working/containers/python-3-anaconda/.devcontainer ./
