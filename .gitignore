@@ -1,2 +1,4 @@
 .devcontainer/
 working/
+notebooks/
+./ipynb_checkpoints
