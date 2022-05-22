@@ -28,12 +28,12 @@ docker run -e DISPLAY=192.168.1.101:0 --mount type=bind,source="$(pwd)",target=/
 ```
 
 # Jupyter
-## Start juypter manually from within container
+## Start Jupyter manually from within container
 ```
 jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser > /dev/null 2>&1 &
 ```
 
-## Killing juypter
+## Killing Jupyter
 ```
 ps aux | grep jupyter
 kill -9 pid
